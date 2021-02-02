@@ -1,0 +1,315 @@
+body {
+    position: relative;
+    font-family: "Inter",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-x: hidden;
+    line-height: 1.5;
+    background-color: #fff;
+}
+.popular-articles, .related-articles {
+    background: #fff;
+}
+article, section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    color: #262626;
+    background: #fff;
+    transform: translate3d(0, 0, 0);
+}
+.content {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    -webkit-overflow-scrolling: touch;
+}
+.container, .s-container {
+    display: table;
+    table-layout: fixed;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.container .wrap, .s-container .wrap {
+    display: table-cell;
+    vertical-align: top;
+    padding: 8% 6%;
+}
+@media (min-width: 1265px){
+.container .wrap, .s-container .wrap {
+    padding: 75px calc(5% + 15px);
+}
+}
+.flex.fixedSpaces {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.left {
+    text-align: left !important;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+.flex.fixedSpaces>[class*='col-'] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.flex>.col-2-10 {
+    width: 20%;
+}
+.flex>[class*='col-'] {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.popular-articles li, .related-articles li {
+    margin-top: 20px;
+}
+.popular-articles .articles-preview .art, .related-articles .articles-preview .art {
+    background: #fff;
+    display: block;
+    height: 100%;
+    box-shadow: 0px 10px 20px rgba(10,33,65,0.05), 0px 0px 2px rgba(0,0,0,0.13);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    transition: 0.35s;
+}
+.popular-articles .articles-preview .art .thumbnail, .related-articles .articles-preview .art .thumbnail {
+    padding-bottom: 65%;
+}
+.popular-articles .articles-preview .art .thumbnail, .popular-articles .articles-preview .art .thumbnail:after, .related-articles .articles-preview .art .thumbnail, .related-articles .articles-preview .art .thumbnail:after {
+    border-radius: 3px 3px 0 0;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.art .thumbnail {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.popular-articles .articles-preview .art .category, .related-articles .articles-preview .art .category {
+    position: absolute;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0px 7px;
+    font-size: 12px;
+    background: rgba(38,38,38,0.3);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    left: 16px;
+    top: 16px;
+    max-width: calc(100% - 32px);
+    transition: 0.35s;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.popular-articles .articles-preview .art .meta, .related-articles .articles-preview .art .meta {
+    padding: 0 20px 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: rgba(38,38,38,0.4);
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+@media (max-width: 435px){
+.flex>.phone-col-1-1 {
+    width: 100% !important;
+}
+.widthchange{
+    width: 80% !important;
+}}
+
+.flex.fixedSpaces {
+    margin-left: -8px;
+    margin-right: -10px;
+}
+.container .wrap *, .s-container .wrap * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.left {
+    text-align: left !important;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+ol, ul, li {
+    list-style: none;
+}
+@media (max-width: 435px){
+.container .wrap, .s-container .wrap {
+    padding: 60px 6%;
+}}
+.full-article-page .article-content {
+    max-width: 1180px !important;
+}
+.article .article-content, .page .article-content {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none;
+    max-width: 980px !important;
+    position: relative;
+    z-index: 100;
+    padding: 2px;
+}
+.full-article-page .full-article .share-top-container {
+    position: relative;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.margin-bottom-3 {
+    margin-bottom: 30px !important;
+}
+.margin-top-2 {
+    margin-top: 20px !important;
+}
+@media (min-width: 1024px){
+.full-article-page .full-article .article-content h1, .full-article-page .full-article .article-content h2, .full-article-page .full-article .article-content h3, .full-article-page .full-article .article-content h4, .full-article-page .full-article .article-content h5, .full-article-page .full-article .article-content p, .full-article-page .full-article .article-content ul, .full-article-page .full-article .article-content ol, .full-article-page .full-article .article-content hr, .full-article-page .full-article .article-content figure:not(.wide), .full-article-page .full-article .article-content pre, .full-article-page .full-article .article-content .share-top, .full-article-page .full-article .article-content figure.wp-caption figcaption, .full-article-page .full-article .article-content .infoBox_tutorial, .full-article-page .full-article .article-content .syntaxhighlighter {
+    max-width: 780px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}}
+@media (min-width: 1240px){
+h1.small, .h1.small {
+    font-size: 51px;
+}
+
+}
+@media (min-width: 1024px){
+h1.small, .h1.small {
+    font-size: 48px;
+}
+}
+@media (min-width: 436px){
+h1.small, .h1.small {
+    font-size: 39px;
+}}
+h1.small, .h1.small {
+    font-size: 33px;
+}
+h1.small, .h1.small {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.boldest {
+    font-weight: 800 !important;
+}
+article h1, section h1 {
+    font-family: "Inter",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+@media (min-width: 1240px){
+h1, .h1 {
+    font-size: 57px;
+}}
+@media (min-width: 1024px){
+h1, .h1 {
+    font-size: 51px;
+}}
+@media (min-width: 436px){
+h1, .h1 {
+    font-size: 42px;
+}}
+h1, .h1 {
+    font-size: 36px;
+    letter-spacing: -0.022em;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+}
+h1, .h1 {
+    font-size: 52px;
+    line-height: 1.16;
+    margin-bottom: 17px;
+    letter-spacing: -.03em;
+    font-family: "Inter",-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+.flex>.col-2-10 {
+    width: 20%;
+}
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .bold{
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+  }
